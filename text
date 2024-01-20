@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button and API Response</title>
+</head>
+<body>
+  <button id="fetchButton">Fetch Data</button>
+  <div id="responseDiv"></div>
+
+  <script>
+    // 在页面加载完成后执行以下代码
+    window.onload = function() {
+      // 获取按钮和响应 div 的引用
+      var fetchButton = document.getElementById('fetchButton');
+      var responseDiv = document.getElementById('responseDiv');
+
+      // 添加按钮点击事件处理程序
+      fetchButton.onclick = function() {
+        // 创建一个 XMLHttpRequest 对象
+        var xhr = new XMLHttpRequest();
+
+        // 设置请求的方法、URL 和异步标志
+        xhr.open('GET', 'https://demo-api.meedu.xyz/api/v2/links', true);
+
+        // 注册请求完成后的回调函数
+        xhr.onload = function() {
+          if (xhr.status === 200) {
+            // 将响应内容转换为字符串
+            var responseText = xhr.responseText;
+
+            // 插入响应内容到 div 元素中
+            responseDiv.innerHTML = responseText;
+          }
+        };
+
+        // 发送请求
+        xhr.send();
+      };
+    };
+  </script>
+</body>
+</html>
