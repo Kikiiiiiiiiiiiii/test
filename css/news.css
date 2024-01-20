@@ -1,0 +1,162 @@
+/* bannner */
+.banner img {
+    width: 100%;
+}
+
+
+.button {
+    width: 400px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    margin: 57px 0 104px 300px;
+
+}
+
+
+.button li {
+    float: left;
+    width: 200px;
+    height: 48px;
+    border: 1px solid #c92007;
+    margin-left: -1px;
+}
+
+.button li a {
+    display: block;
+    font-size: 17px;
+    color: #333;
+}
+
+.button li:hover,
+.button li:hover a {
+    background-color: #c92007;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content {
+    width: 1200px;
+    height: 212px;
+    border-bottom: 1px dashed #333;
+    margin-bottom: 38px;
+}
+
+.date {
+    text-align: center;
+    float: left;
+    width: 152px;
+    height: 212px;
+}
+
+.date h3 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.con-img {
+    float: left;
+    width: 266px;
+    height: 173px;
+    overflow: hidden;
+    margin-right: 34px;
+}
+
+.con-img img {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.wenzi {
+    padding-top: 16px;
+}
+
+.wenzi a {
+    display: block;
+    color: #373636;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 13px;
+}
+
+.wenzi p {
+    color: #666;
+    font-size: 14px;
+    line-height: 22px;
+    height: 72px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.xiangxi a {
+    float: left;
+    text-align: center;
+    width: 72px;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid #ccc;
+}
+
+.content:hover .date {
+    color: #c92007;
+}
+
+.content:hover .xiangxi a {
+    display: block;
+    background: #c92007;
+    color: #fff;
+}
+
+.content:hover .con-img img {
+    transform: scale(1.1);
+}
+
+.page {
+    text-align: center;
+    margin: 60px 0 79px 560px;
+}
+
+
+
+.page li {
+    float: left;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    margin-left: -1px;
+}
+
+.page li:first-child {
+    border: 1px solid #ccc;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.page li:nth-child(2) {
+    background-color: #c92007;
+    color: #fff;
+}
+
+.page li:last-child {
+    border: 1px solid #ccc;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    position: relative;
+    z-index: -1;
+}

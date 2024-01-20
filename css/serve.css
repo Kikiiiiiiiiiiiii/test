@@ -1,0 +1,134 @@
+/* 声明字体图标 一定要注意路径的变化 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+        url('../fonts/icomoon.woff?tomleg') format('woff'),
+        url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* banner */
+.banner img {
+    width: 100%;
+}
+
+
+/* main */
+.main-tab {
+    width: 1010px;
+    margin: 56px 0;
+    margin-left: 94px;
+}
+
+.main-tab ul li {
+    float: left;
+    width: 198px;
+    height: 46px;
+    border: 1px solid #c92007;
+    margin-left: -1px;
+    text-align: center;
+    line-height: 46px;
+}
+
+.main-tab ul li a {
+    display: block;
+    width: 198px;
+    height: 45px;
+    font-size: 18px;
+    color: #333;
+}
+
+.main-tab ul li:hover,
+.main-tab ul li a:hover {
+    background-color: #c92007;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+.main-img {
+    width: 1200px;
+    height: 380px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-img ul {
+    width: 1200000px;
+    height: 380px;
+    animation: move 10s infinite backwards;
+}
+
+.main-img img {
+    float: left;
+    width: 1200px;
+    height: 380px;
+}
+
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+
+    }
+
+    33% {
+        transform: translateX(-1200px);
+    }
+
+    66% {
+        transform: translateX(-2400px);
+    }
+
+    100% {
+        transform: translateX(-3600px);
+    }
+
+}
+
+.main-img ol {
+    position: absolute;
+    bottom: 12px;
+    right: 52px;
+}
+
+.main-img ol li {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #d7d7d7;
+    margin-left: 6px;
+}
+
+.main-title,
+.main-pro {
+    margin-top: 68px;
+    color: #333;
+    font-size: 28px;
+    text-align: center;
+}
+
+.main-title p,
+.main-pro p {
+    font-weight: bold;
+}
+
+.main-con {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.main-sy-img {
+    display: block;
+    margin: 56px 0;
+}

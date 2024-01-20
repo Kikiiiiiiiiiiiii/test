@@ -1,0 +1,269 @@
+/* 声明字体图标 一定要注意路径的变化 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+        url('../fonts/icomoon.woff?tomleg') format('woff'),
+        url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/*版心  */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 公用红色 */
+.style_red {
+    color: #c92007;
+}
+
+
+
+/* shortcut快捷导航栏 */
+.shortcut {
+    /* margin-top: 12px; */
+    height: 84px;
+    border-bottom: 2px solid #cd2f18;
+    line-height: 84px;
+}
+
+.sc-l {
+    float: left;
+    margin-right: 66px;
+}
+
+.sc-m ul>li {
+    float: left;
+    font-size: 14px;
+    color: #333;
+    margin-right: 30px;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.sc-m-in {
+    position: absolute;
+    top: 0px;
+    left: -34px;
+    background: rgba(255, 255, 255, 0.9);
+    transition: all 0.5s;
+    display: none;
+}
+
+.sc-m-in a {
+    width: 124px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    display: block;
+}
+
+.sc-m li:hover .sc-m-in {
+    position: absolute;
+    top: 80px;
+    left: -34px;
+    display: block;
+}
+
+/* .sc-m-in i:hover {
+    display: block;
+    background-color: #c92007;
+}
+
+.sc-m-in i:hover a {
+    color: #fff;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+.sc-r {
+    float: right;
+    margin-right: 44px;
+    color: #c92007;
+    font-size: 18px;
+    background: url(../images/phone.png) no-repeat left center;
+    padding-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+    height: 446px;
+    width: 100%;
+    background-color: #dadada;
+    padding-top: 42px;
+    overflow: hidden;
+}
+
+.footer-l {
+    float: left;
+    height: 357px;
+    width: 488px;
+    border-right: 1px solid #c9c9c9;
+}
+
+.footer-l li {
+    color: #333;
+    font-size: 15px;
+    margin-bottom: 22px;
+}
+
+.footer-l .dizhi {
+    color: #c92007;
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+.footer-l .dizhi::before {
+    content: '\e947';
+    font-family: 'icomoon';
+}
+
+.footer-l .phone {
+    color: #c92007;
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+.footer-l .phone::before {
+    content: '\e942';
+    font-family: 'icomoon';
+}
+
+.footer-l .chuanzhen {
+    color: #c92007;
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+.footer-l .chuanzhen::before {
+    content: '\e954';
+    font-family: 'icomoon';
+}
+
+.footer-l .youxiang {
+    color: #c92007;
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+.footer-l .youxiang::before {
+    content: '\e979';
+    font-family: 'icomoon';
+
+}
+
+.footer-l .wangzhi {
+    color: #c92007;
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+.footer-l .wangzhi::before {
+    content: '\eadb';
+    font-family: 'icomoon';
+    line-height: 20px;
+}
+
+
+
+.footer-c {
+    float: left;
+    width: 382px;
+    height: 292px;
+    text-align: center;
+    padding: 0 76px;
+}
+
+.footer-c p:nth-child(1) {
+    margin: 30px 0 50px 0;
+}
+
+.footer-c p:nth-child(3) {
+    margin-top: 30px;
+}
+
+.footer-r ul li:first-child {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 14px;
+}
+
+.footer-r ul li {
+    margin-bottom: 8px;
+}
+
+.footer-r ul li input {
+    height: 40px;
+    width: 328px;
+    font-size: 14px;
+    color: #fff;
+    padding-left: 22px;
+    background: #bbb;
+}
+
+.footer-r ul li textarea {
+    padding: 16px 22px 0 22px;
+    width: 328px;
+    height: 75px;
+    resize: none;
+    background: #bbb;
+    border: 0;
+    outline: 0;
+}
+
+
+.footer-r ul li:last-child input {
+    font-size: 14px;
+    color: #fff;
+    background: #c92007;
+}
+
+.footer-r ul li input::placeholder,
+.footer-r ul li textarea::placeholder {
+    /* Firefox, Chrome, Opera */
+    color: #fff;
+
+}
+
+.footer-r ul li textarea::placeholder {
+    font-weight: 600;
+}
+
+.copyright {
+    border-top: 1px solid #c9c9c9;
+    text-align: center;
+    line-height: 50px;
+    color: #666;
+    font-size: 12px;
+}
+
+.copyright a {
+    color: #337ab7;
+}

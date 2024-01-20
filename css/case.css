@@ -1,0 +1,144 @@
+/* 声明字体图标 一定要注意路径的变化 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+        url('../fonts/icomoon.woff?tomleg') format('woff'),
+        url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* banner */
+.banner img {
+    width: 100%;
+}
+
+.button {
+    text-align: center;
+    /* margin: 56px 0 56px 300px; */
+    margin: 56px auto 100px;
+}
+
+.button li {
+    display: inline-block;
+    width: 200px;
+    height: 48px;
+    text-align: center;
+    border: 1px solid #c92007;
+    margin-left: -4px;
+}
+
+.button li a {
+    display: block;
+    color: #333;
+    font-size: 18px;
+    line-height: 46px;
+    padding: 0;
+    border-radius: 0;
+    margin-right: 0;
+}
+
+.button li:hover a {
+    background-color: #c92007;
+    color: #fff;
+}
+
+.con ul {
+    width: 100%;
+}
+
+.con li {
+    float: left;
+    width: 20%;
+    height: auto;
+    background-color: pink;
+    position: relative;
+    overflow: hidden;
+}
+
+.con li img {
+    width: 100%;
+    float: left;
+    transition: all .5s;
+}
+
+.con li div {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    background: rgba(201, 32, 7, 0.7);
+}
+
+.con li div p {
+    padding: 35% 10% 0;
+}
+
+
+.con li div i::before {
+    content: '\ea42';
+    font-family: 'icomoon';
+    text-align: right;
+    font-size: 34px;
+    display: inline-block;
+    padding: 30% 0 0 80%;
+}
+
+.con li:hover div {
+    display: block;
+}
+
+.con li:hover img {
+    transform: scale(1.1);
+}
+
+
+
+.page {
+    margin: 60px auto 70px;
+    text-align: center;
+}
+
+.page ul {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.page ul li {
+    display: inline;
+}
+
+
+.page li a {
+    float: left;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-left: -1px;
+}
+
+.page li:first-child>a {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.page li:last-child>a {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.page li:hover a {
+    background-color: #eee;
+    border-color: #ddd;
+}
